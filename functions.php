@@ -26,7 +26,7 @@ if ( ! function_exists( 'minimalist_theme_setup' ) ) :
 
   }
 
-}
+endif;
 add_action('after_setup_theme', 'minimalist_theme_setup');
 
 /**

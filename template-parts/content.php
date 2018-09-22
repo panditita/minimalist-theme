@@ -19,15 +19,12 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
-				<?php
-				carmemias_theme_posted_on();
-				carmemias_theme_posted_by();
-				?>
+				Posted on <?php	the_date(); ?> by <?php the_author();	?>.
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php carmemias_theme_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
