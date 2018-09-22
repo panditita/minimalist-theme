@@ -18,7 +18,7 @@ if ( ! function_exists( 'minimalist_theme_setup' ) ) :
 
     // One menu registered
     register_nav_menus( array(
-      'main-menu'   => __( 'Main Menu', 'minimalist-theme' )
+      'menu-1'   => __( 'Primary Menu', 'minimalist-theme' )
     ) );
 
     // Enable support for Post Thumbnails on posts and pages.
