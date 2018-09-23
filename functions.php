@@ -65,6 +65,7 @@ add_action( 'widgets_init', 'minimalist_theme_widgets_init' );
 function minimalist_theme_scripts() {
 	wp_enqueue_style( 'minimalist-theme-style', get_stylesheet_uri() );
 
-  wp_enqueue_script( 'carmemias-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), false, true );
+  wp_enqueue_script( 'minimalist-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), false, true );
+  wp_enqueue_script( 'minimalist-theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'minimalist_theme_scripts' );
