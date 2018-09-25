@@ -88,6 +88,10 @@ body {
   width:100%;
 }
 
+.admin-bar .main-navigation {
+  top:32px;
+}
+
 .site-content {
   display: flex;
   justify-content: space-between;
@@ -204,6 +208,17 @@ body {
 }
 
 /*--------------------------------------------------------------
+# Page/Post Content
+--------------------------------------------------------------*/
+.entry-title {
+  margin-bottom: 0.5rem;
+}
+
+.entry-meta {
+  margin-bottom:1.5rem;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
@@ -220,6 +235,12 @@ body {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+@media screen and (max-width: 782px) {
+  .admin-bar .main-navigation {
+    top:46px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: inline-block;

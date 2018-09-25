@@ -1,6 +1,6 @@
 # Minimalist Theme
 
-Minimalist WordPress theme for the Code You Future WordPress module exercises.
+Minimalist WordPress theme for the CodeYourFuture WordPress module exercises.
 
 ## Theme Aims
 
