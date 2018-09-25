@@ -19,18 +19,18 @@ Tags: translation-ready
 --------------------------------------------------------------*/
 
 body {
-  font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
-  margin:0;
-  padding:0;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
 }
 
 .site-header,
 .widget-area,
 .site-footer,
 .entry-meta {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -69,7 +69,6 @@ body {
 	top: 5px;
 	width: auto;
 	z-index: 100000;
-	/* Above WP toolbar. */
 }
 
 /* Do not show the outline on the skip link target. */
@@ -81,64 +80,64 @@ body {
 * Structure
 --------------------------------------------------------------*/
 .main-navigation {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 }
 
 .admin-bar .main-navigation {
-  top:32px;
+	top: 32px;
 }
 
 .site-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 3%;
+	display: flex;
+	justify-content: space-between;
+	padding: 3%;
 }
 
 .content-area {
-  width: 72%;
+	width: 72%;
 }
 
 .widget-area {
-  width:25%;
-  margin-left: 3%;
+	width: 25%;
+	margin-left: 3%;
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .site-branding {
-  margin-top:40px;
-  width: 100%;
-  padding:3% 0;
-  text-align: center;
-  background-color: #ececec;
+	margin-top: 40px;
+	width: 100%;
+	padding: 3% 0;
+	text-align: center;
+	background-color: #ececec;
 }
 
 .wp-admin .site-branding {
-  margin-top: 90px;
+	margin-top: 90px;
 }
 
 .site-title {
-  font-size:2.5rem;
-  text-transform: uppercase;
+	font-size: 2.5rem;
+	text-transform: uppercase;
 }
 
 .site-description {
-  font-size:1.6rem;
+	font-size: 1.6rem;
 }
 
 /* Navigation */
 
 .main-navigation {
-  clear: both;
-  display: block;
-  width: 100%;
-  background-color: #333;
-  color: #eee;
+	clear: both;
+	display: block;
+	width: 100%;
+	background-color: #333;
+	color: #eee;
 }
 
 .main-navigation ul {
@@ -149,7 +148,7 @@ body {
 }
 
 .main-navigation ul ul {
-  background-color: #333;
+	background-color: #333;
 	float: left;
 	position: absolute;
 	top: 100%;
@@ -173,110 +172,110 @@ body {
 
 .main-navigation a {
 	display: block;
-  padding: 10px;
-  color: #eee;
-  text-decoration:none;
+	padding: 10px;
+	color: #eee;
+	text-decoration: none;
 }
 
 .menu-item-has-children > a::after {
 	display: inline-block;
 	vertical-align: bottom;
-	content:'';
+	content: '';
 	margin-left: 5px;
 	width: 0px;
 	height: 0px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-	border-bottom:0;
+	border-top: 5px solid #fff;
+	border-bottom: 0;
 }
 
 .menu-item-has-children > a:hover::after {
 	border-bottom: 5px solid #fff;
-	border-top:0;
+	border-top: 0;
 }
 
 /* Small menu. */
 .menu-toggle {
 	display: none;
-  float: left;
-  line-height: 20px;
-  padding: 10px 5px;
-  position: relative;
-  z-index: 1000;
-  width: auto;
+	float: left;
+	line-height: 20px;
+	padding: 10px 5px;
+	position: relative;
+	z-index: 1000;
+	width: auto;
 }
 
 /*--------------------------------------------------------------
 # Page/Post Content
 --------------------------------------------------------------*/
 .entry-title {
-  margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .entry-meta {
-  margin-bottom:1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  text-align: center;
-  padding: 1%;
-  background-color: #333;
-  color: #eee;
+	text-align: center;
+	padding: 1%;
+	background-color: #333;
+	color: #eee;
 }
 
 .site-footer a {
-  color: #eee;
+	color: #eee;
 }
 
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 @media screen and (max-width: 782px) {
-  .admin-bar .main-navigation {
-    top:46px;
-  }
+	.admin-bar .main-navigation {
+		top: 46px;
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: inline-block;
-  }
+	.menu-toggle {
+		display: inline-block;
+	}
 
-  .main-navigation ul {
-    display:none;
-  }
+	.main-navigation ul {
+		display: none;
+	}
 
-  .main-navigation.toggled ul {
-    display:block;
-    margin-top:40px;
-  }
+	.main-navigation.toggled ul {
+		display: block;
+		margin-top: 40px;
+	}
 
-  .main-navigation.toggled ul li {
-    float:none;
-  }
+	.main-navigation.toggled ul li {
+		float: none;
+	}
 
-  .main-navigation.toggled ul ul {
-    float: none;/*left;*/
-  	position: relative;
-  	top: 0;
-  	left: 20px;
-    margin-top:0;
-  }
+	.main-navigation.toggled ul ul {
+		float: none;
+		position: relative;
+		top: 0;
+		left: 20px;
+		margin-top: 0;
+	}
 
-  .site-content {
-    flex-wrap: wrap;
-  }
+	.site-content {
+		flex-wrap: wrap;
+	}
 
-  .content-area {
-    width: 100%;
-  }
+	.content-area {
+		width: 100%;
+	}
 
-  .widget-area {
-    width:100%;
-    margin-left: 0;
-  }
+	.widget-area {
+		width: 100%;
+		margin-left: 0;
+	}
 }

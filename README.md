@@ -16,7 +16,7 @@ Template files:
 * template-parts/content.php
 * template-parts/content-none.php
 
-Includes Normalize v.8.0.0 [https://necolas.github.io/normalize.css/]
+Includes Normalize v.8.0.0 [https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)
 
 ## Further Information
 
