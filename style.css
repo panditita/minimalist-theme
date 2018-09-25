@@ -92,7 +92,15 @@ body {
 }
 
 .site-content {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding: 3%;
 }
@@ -133,11 +141,11 @@ body {
 /* Navigation */
 
 .main-navigation {
+	background-color: #333;
 	clear: both;
+	color: #eee;
 	display: block;
 	width: 100%;
-	background-color: #333;
-	color: #eee;
 }
 
 .main-navigation ul {
@@ -150,9 +158,9 @@ body {
 .main-navigation ul ul {
 	background-color: #333;
 	float: left;
+	left: -999em;
 	position: absolute;
 	top: 100%;
-	left: -999em;
 	z-index: 99999;
 }
 
@@ -171,23 +179,23 @@ body {
 }
 
 .main-navigation a {
+	color: #eee;
 	display: block;
 	padding: 10px;
-	color: #eee;
 	text-decoration: none;
 }
 
 .menu-item-has-children > a::after {
-	display: inline-block;
-	vertical-align: bottom;
-	content: '';
-	margin-left: 5px;
-	width: 0px;
-	height: 0px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #fff;
 	border-bottom: 0;
+	content: '';
+	display: inline-block;
+	height: 0px;
+	margin-left: 5px;
+	vertical-align: bottom;
+	width: 0px;
 }
 
 .menu-item-has-children > a:hover::after {
@@ -202,8 +210,8 @@ body {
 	line-height: 20px;
 	padding: 10px 5px;
 	position: relative;
-	z-index: 1000;
 	width: auto;
+	z-index: 1000;
 }
 
 /*--------------------------------------------------------------
@@ -221,10 +229,10 @@ body {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	text-align: center;
-	padding: 1%;
 	background-color: #333;
 	color: #eee;
+	padding: 1%;
+	text-align: center;
 }
 
 .site-footer a {
@@ -260,13 +268,17 @@ body {
 
 	.main-navigation.toggled ul ul {
 		float: none;
-		position: relative;
-		top: 0;
 		left: 20px;
 		margin-top: 0;
+		position: relative;
+		top: 0;
 	}
 
 	.site-content {
+		-webkit-box-lines: multiple;
+		-moz-box-lines: multiple;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
